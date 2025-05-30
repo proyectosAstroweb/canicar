@@ -1,0 +1,361 @@
+
+
+
+
+
+
+
+
+.section-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff0000, #8b0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 99px;
+    margin-right: 7px;
+
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff0000;
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+
+
+
+
+
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+margin-right: 77px;
+margin-left: 443px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 19px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .7;
+}
+  @media (max-width: 768px) {
+    .slide {
+      flex-direction: column;
+    }
+    .slide img, .info {
+      width: 190%;
+    }
+    .info {
+      padding: 10px;
+    }
+    .prev, .next {
+      font-size: 1.5em;
+      padding: 8px;
+    }
+  }
+   /* Estilos básicos y reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Menú de navegación */
+       
+/* Estilo del contenedor del nav */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px 30px;
+
+  top: 0;
+  z-index: 1000;
+}
+
+/* Estilo de la lista del menú */
+nav a {
+  list-style: none;
+  display: auto;
+
+  justify-content: center;
+  
+  padding: 0;
+
+  margin: 88px;
+  margin-right: 77px;
+  transition: all 0.3s ease;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+nav  a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Estilo para el indicador activo (opcional) */
+nav ul li a.active {
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+}
+
+/* Animación suave para elementos */
+nav ul li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #007BFF;
+  transition: width 0.3s;
+  width: 0;
+  margin-top: 5px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+      
+section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+section h2 {
+            text-align: center;
+            font-weight: 77px;
+            margin-bottom: 20px;
+            font-family:¨verdana¨;
+            color: #222;
+            font-size: 47px;
+               view-timeline-name: --reveal;
+            animation-name: show;
+            animation-fill-mode: both;
+            animation-timeline: --reveal;
+            animation-range: entry 25% cover 50%;
+        }
+section p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #222;
+            font-size: 22px;
+        }
+   
+.coches {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 77px;
+          
+
+            justify-content: center;
+
+        }
+
+.coche {
+            flex: 1 1 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+.coche:hover {
+            transform: scale(1.44);
+        }
+
+.coche img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+.coche h3 {
+            margin: 4px;
+            font-size: 1.7em;
+        }
+
+.coche p {
+            margin: 0 10px 10px;
+        }
+
+
+.historia {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+
+         
+        }
+        .historia h4{
+            color: red;
+
+         
+        }
+ .historia p{
+            color:black;
+            margin: 0px;
+            font-size: 22px;
+
+         
+        }
+         .historia h2{
+            color:red;
+            margin: 0px;
+            font-size: 55px;
+
+         
+        }
+.carousel-caption{
+
+ background-color: rgba(52, 152, 219, 0.3); /* color azul con opacidad */
+            padding: 10px;
+            border-radius: 5px;}
+
+ .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+            
+        /* Ubicación con mapa */
+.mapa {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            view-timeline-name: --reveal;
+            animation-name: show;
+            animation-fill-mode: both;
+            animation-timeline: --reveal;
+            animation-range: entry 25% cover 50%;
+        }
+
+
+  
+
+  .red-social {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .red-social:hover {
+    color: #ff0000; /* Rojo en hover */
+    transform: scale(1.2);
+  }
+
+  /* Colores específicos para cada red social */
+  .instagram {
+    color: #ffffff;
+  }
+
+  .facebook {
+    color: #ffffff;
+  }
+
+  .whatsapp {
+    color: #ffffff;
+  }
+
+  /* Opcional: iconos usando Font Awesome (si quieres usarlos, debes incluir la CDN) */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+  .icono {
+    margin-bottom: 8px;
+  }
+@keyframes show {
+              from {
+                opacity:0; scale:10%;
+            }
+            to  {
+                opacity:1; scale:100%;
+            } 
+            }
+        /* Responsive */
+@media(max-width: 768px){
+            .coches {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
