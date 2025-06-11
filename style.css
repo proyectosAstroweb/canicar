@@ -1,7 +1,259 @@
+ h2 {
+            text-align: center;
+            font-weight: 77px;
+            margin-bottom: 20px;
+            font-family:¨verdana¨;
+            color: #222;
+            font-size: 47px;
+               view-timeline-name: --reveal;
+            animation-name: show;
+            animation-fill-mode: both;
+            animation-timeline: --reveal;
+            animation-range: entry 25% cover 50%;
+        }
+
+.service_section {
+     view-timeline-name: --reveal;
+            animation-name: show;
+            animation-fill-mode: both;
+            animation-timeline: --reveal;
+            animation-range: entry 25% cover 50%;
+  background: #990404;
+  color: #ffffff;
+}
+
+.service_section .box {
+  margin: 10px;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin-top: 45px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.service_section .box .img-box img {
+  width: 100%;
+}
+
+.service_section .box .detail-box {
+  padding: 25px;
+  background: #ffffff;
+  color: #002044;
+}
+
+.service_section .box .detail-box h5 {
+  font-weight: 600;
+}
+
+.service_section .box .detail-box a {
+  color: #ff5722;
+}
+
+.service_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.service_section .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ff5722;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid #ff5722;
+}
+
+.service_section .btn-box a:hover {
+  background-color: transparent;
+  color: #ff5722;
+}
+
+.client_section {
+  position: relative;
+     view-timeline-name: --reveal;
+            animation-name: show;
+            animation-fill-mode: both;
+            animation-timeline: --reveal;
+            animation-range: entry 25% cover 50%;
+}
+
+.client_section .heading_container {
+  margin-bottom: 30px;
+}
+
+.client_section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+.client_section .box .img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 105px;
+  margin-bottom: -50px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.client_section .box .img-box img {
+  border-radius: 100%;
+  width: 100%;
+  border: 5px solid #ffffff;
+}
+
+.client_section .box .client_id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.client_section .box .client_id .client_info h6 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.client_section .box .client_id .client_info p {
+  margin-bottom: 0;
+ 
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.client_section .box .detail-box {
+  background-color: #ffffff;
+  padding: 75px 25px 25px 25px;
+  background-color: #ff5722;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.client_section .box .detail-box i {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.client_section .owl-carousel .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.client_section .owl-carousel .owl-nav .owl-prev,
+.client_section .owl-carousel .owl-nav .owl-next {
+  width: 55px;
+  height: 55px;
+  outline: none;
+  bottom: 0px;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 0 15px;
+  border: 1px solid #ff5722;
+  background-color: #ff5722;
+  color: #ffffff;
+}
+
+.client_section .owl-carousel .owl-nav .owl-prev:hover,
+.client_section .owl-carousel .owl-nav .owl-next:hover {
+  background-color: transparent;
+  color: #ff5722;
+}
+
+.layout_padding {
+  padding: 90px 0;
+}
+
+.layout_padding2 {
+  padding: 75px 0;
+}
+
+.layout_padding2-top {
+  padding-top: 75px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 75px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+ .badge {
+    
+    top: 10px; 
+    right: 10px; /* ajusta para posicionar */
+    background-color: #111204; 
+    color:  #990404; /* color del texto */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px; /* forma redondeada */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.8); }
+    100% { transform: scale(1); }
+  }
+
+  .badge:hover {
+    animation: pulse 0.9s;
+  }
+
+
+
+
+
+
+
+
 
 .section-title {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: 700;
     background: linear-gradient(90deg, #ff0000, #8b0000);
     -webkit-background-clip: text;
@@ -23,82 +275,22 @@
     margin-top: 8px;
     border-radius: 2px;
   }
-
-
-
-
-.button-24 {
-  background: #FF4742;
-  border: 1px solid #FF4742;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-margin-right: 77px;
-margin-left: 660px;
-  cursor: pointer;
-  display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-  font-size: 19px;
-  font-weight: 800;
-  line-height: 16px;
-  min-height: 40px;
-  outline: 0;
-  padding: 19px 14px;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   
-}
-
-.button-24:hover,
-.button-24:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: #FF4742;
-}
-
-.button-24:active {
-  opacity: .7;
-}
-  @media (max-width: 768px) {
-    .slide {
-      flex-direction: column;
-    }
-    .slide img, .info {
-      width: 190%;
-    }
-    .info {
-      padding: 10px;
-    }
-    .prev, .next {
-      font-size: 1.5em;
-      padding: 8px;
-    }
-  }
-   /* Estilos básicos y reset */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  
 
  
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            
             color: #333;
         }
 
         header {
             background-color: #222;
             color: #fff;
-            padding: 20px 0;
+            padding: 25px 0;
             text-align: center;
         }
 
@@ -106,9 +298,7 @@ margin-left: 660px;
             margin: 0;
         }
 
-        /* Menú de navegación */
-       
-/* Estilo del contenedor del nav */
+      
 nav {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -117,8 +307,6 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
-/* Estilo de la lista del menú */
 nav a {
   list-style: none;
   display: auto;
@@ -149,7 +337,7 @@ nav ul li a.active {
   border-bottom: 2px solid #007BFF;
 }
 
-/* Animación  para elementos */
+
 nav ul li a::after {
   content: '';
   display: block;
@@ -165,9 +353,9 @@ nav ul li a:hover::after {
 }
       
 section {
-            padding: 40px 20px;
+            padding: 1px 8px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: auto ;
         }
 
 section h2 {
@@ -187,44 +375,27 @@ section p {
             text-align: center;
             margin-bottom: 20px;
             color: #222;
-            font-size: 22px;
+            font-size: 34px;
         }
    
-.coches {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 77px;
-            margin-left: 500px;
-            margin-right: 45px;
-          position: center;
-object-position: center;
-            justify-content: center;
+ #coches {
+    padding: 20px;
+  }
 
-        }
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 4em;
+  }
 
-.coche {
-            flex: 1 1 250px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            background-color: #fff;
-            transition: transform 0.3s;
-        }
 
-.coche:hover {
-            transform: scale(1.44);
-        }
+  
 
-.coche img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+
 
 .coche h3 {
             margin: 4px;
-            font-size: 1.7em;
+            font-size: 3em;
         }
 
 .coche p {
@@ -242,32 +413,15 @@ object-position: center;
         
 .carousel-caption{
 
- background-color: rgba(52, 152, 219, 0.3); 
+ background-color:  #990404; 
             padding: 10px;
-            border-radius: 5px;}
+            border-radius: 5px; 
+        }
 
  .galeria {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
+     background:  #990404;
     }
-
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-    }
-
-    .slide img {
-      width: 100%;
-      display: block;
-      border-radius: 8px;
-    }
-            
+     
   
 .mapa {
             display: flex;
@@ -293,10 +447,160 @@ object-position: center;
                 opacity:1; scale:100%;
             } 
             }
-        /* Responsive */
-@media(max-width: 768px){
-            .coches {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* Menú en columna en pantallas pequeñas */
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 10px 0;
+  }
+}
+
+/* Carousel: hacer que la imagen ocupe toda la pantalla en móvil */
+#logoCarousel img {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-coches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.coche {
+  flex: 1 1 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.coche:hover {
+  transform: scale(1.90);
+}
+
+.coche img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.badge {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+
+.button-24 {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  display: block;
+}
+
+.button-24:hover {
+  background-color: #0056b3;
+}
+
+/* Sección "Sobre Nosotros" y "Por qué Elegirnos" */
+#historia, #service_section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#historia p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Testimonios y otros contenedores */
+.client_section {
+  background-color: #f9f9f9;
+  font-color:green;
+  padding: 40px 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 77px;
+  max-width: 300px;
+  font-color:green;
+  margin: 0 auto 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.box-img {
+ 
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.detail-box {
+  margin-top: 5px;
+  margin-left: 77px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.client_id h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Ubicación - mapa adaptativo */
+#ubicacion iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Ajustar iconos y footer en pantallas pequeñas */
+  footer {
+    flex-direction: column;
+  }
+  .button-24 {
+    margin: 20px auto;
+  }
+  /* Otros ajustes si es necesario */
+} 
