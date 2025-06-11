@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carrusel de Fotos de Coche con Especificaciones</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .carrusel-container {
+    max-width: 600px;
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff0000, #8b0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    margin-right: 5px;
+
+  }
+  .titulo::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff0000;
+    margin-top: 8px;
+    border-radius: 2px;
+  
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  /* Tabla de especificaciones */
+  .specs {
+    max-width: 400px;
+    border-collapse: collapse;
+  }
+
+  .specs th, .specs td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  .specs th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<div class="carrusel-container">
+  <div class="titulo">Modelo de Coche XYZ</div>
+  <!-- Fotos del coche -->
+  <img src="g1.jpg" class="slide active" alt="Coche 1" />
+  <img src="g2.jpg" class="slide" alt="Coche 2" />
+  <img src="https://via.placeholder.com/600x400?text=Coche+3" class="slide" alt="Coche 3" />
+  
+  <div class="navigation">
+    <button id="prev">Anterior</button>
+    <button id="next">Siguiente</button>
+  </div>
+</div>
+
+<!-- Tabla de especificaciones -->
+<table class="specs">
+  <tr>
+    <th>Especificación</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td>Motor</td>
+    <td>2.0L Turbo</td>
+  </tr>
+  <tr>
+    <td>Potencia</td>
+    <td>250 CV</td>
+  </tr>
+  <tr>
+    <td>Velocidad máxima</td>
+    <td>240 km/h</td>
+  </tr>
+  <tr>
+    <td>Consumo</td>
+    <td>15 km/l</td>
+  </tr>
+  <tr>
+    <td>Precio</td>
+    <td>$30,000</td>
+  </tr>
+</table>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+</script>
+
+</body>
+</html>
