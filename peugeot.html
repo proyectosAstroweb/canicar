@@ -1,0 +1,185 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Peugeot </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+   
+    h1 {
+      margin: 0;
+    }
+h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff0000, #8b0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 39px;
+    margin-right: 5px;
+
+  }
+  h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff0000;
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+
+    .car-section {
+      margin: 40px auto;
+      max-width: 900px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Portada */
+    .car-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .car-header img {
+      width: 200px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .car-title {
+      font-size: 38px;
+      margin: 0;
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      color: #fff;
+      padding: 25px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+  
+    /* Responsive */
+    @media(max-width: 600px){
+      .car-header {
+        flex-direction: column;
+        align-items: center;
+      }
+      .car-header img {
+        margin-bottom: 10px;
+}
+
+  
+  </style>
+</head>
+<body>
+
+<header>
+ 
+</header>
+
+<div class="car-section">
+  <div class="car-header">
+    <img src="po5.png" />
+    <h2 class="car-title"> Peugeot 208</h2>
+  </div>
+  <div class="carousel" id="carousel1">
+    <div class="slides">
+      <div class="slide"><img src="po5.png" alt="Foto 1" /></div>
+      <div class="slide"><img src="peu1.jpg" alt="Foto 2" /></div>
+      <div class="slide"><img src="peu3.jpg" alt="Foto 3" /></div>
+      <div class="slide"><img src="peu2.jpg" alt="Foto 4" /></div>
+       <div class="slide"><img src="peu4.jpg" alt="Foto 4" /></div>
+                      
+    </div>
+    <button class="prev" onclick="plusSlides(-1, 'carousel1')">&#10094;</button>
+    <button class="next" onclick="plusSlides(1, 'carousel1')">&#10095;</button>
+  </div>
+
+<h2>Peugeot 208,  Motor 1.2, 97.423 km</h2>
+
+<script>
+  const slideIndices = {};
+
+  // Función para mostrar un slide específico
+  function showSlides(n, carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slidesContainer = carousel.querySelector('.slides');
+    const slides = slidesContainer.children;
+    if (!slideIndices[carouselId]) slideIndices[carouselId] = 1;
+    if (n > slides.length) { slideIndices[carouselId] = 1; }
+    if (n < 1) { slideIndices[carouselId] = slides.length; }
+
+    // Mover la galería
+    slidesContainer.style.transform = `translateX(-${(slideIndices[carouselId] - 1) * 100}%)`;
+  }
+
+  // Función para cambiar de slide
+  function plusSlides(n, carouselId) {
+    if (!slideIndices[carouselId]) slideIndices[carouselId] = 1;
+    showSlides(slideIndices[carouselId] += n, carouselId);
+  }
+
+  // Inicializa los carruseles
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const id = carousel.id;
+    slideIndices[id] = 1;
+    showSlides(1, id);
+  });
+</script>
+
+</body>
+</html>
