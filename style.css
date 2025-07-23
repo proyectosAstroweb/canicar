@@ -1326,9 +1326,7 @@ section p {
      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #ff0000, #8b0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     position: relative;
     display: inline-block;
     margin-bottom: 10px;
@@ -1352,14 +1350,7 @@ section p {
      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #ff0000, #8b0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-left: 99px;
-    margin-right: 7px;
+    
   }
   .dias {
     list-style: none;
