@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
  .fjalla-one-regular {
   font-family: "Fjalla One", sans-serif;
@@ -1332,19 +1332,12 @@ section p {
     margin-bottom: 10px;
     margin-left: 500px;
     margin-right: 7px;
-    view-timeline-name: --reveal;
-            animation-name: show;
-            animation-fill-mode: both;
-            animation-timeline: --reveal;
-            animation-range: entry 25% cover 50%;
+   
   }
   .horarios h2 {
     text-align: center;
     view-timeline-name: --reveal;
-            animation-name: show;
-            animation-fill-mode: both;
-            animation-timeline: --reveal;
-            animation-range: entry 25% cover 50%;
+            
     margin-bottom: 10px;
      border-radius: 2px;
      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
